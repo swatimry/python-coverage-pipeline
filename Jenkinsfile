@@ -37,6 +37,7 @@ pipeline {
                 -Dsonar.sources=. ^
                 -Dsonar.host.url=http://localhost:9000 ^
                 -Dsonar.token=%SONAR_TOKEN%
+                -D"sonar.python.coverage.reportPaths=coverage.xml"
                 '''
             }
         }
